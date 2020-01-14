@@ -20,22 +20,17 @@
     <Compile Remove="WpfExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Autofac" Version="4.9.4" />
     <PackageReference Include="Microsoft.Windows.Compatibility" Version="3.1.0" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="DotNetOpenAuth.Core">
-      <HintPath>..\..\..\DotNetOpenAuth\bin\v4.6.1\Debug\DotNetOpenAuth.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth2">
-      <HintPath>..\..\..\DotNetOpenAuth\bin\v4.6.1\Debug\DotNetOpenAuth.OAuth2.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth2.Client">
-      <HintPath>..\..\..\DotNetOpenAuth\bin\v4.6.1\Debug\DotNetOpenAuth.OAuth2.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth2.ClientAuthorization">
-      <HintPath>..\..\..\DotNetOpenAuth\bin\v4.6.1\Debug\DotNetOpenAuth.OAuth2.ClientAuthorization.dll</HintPath>
-    </Reference>
+    <PackageReference Include="DotNetOpenAuth.Core" Version="4.3.4.13329" />
+    <PackageReference Include="DotNetOpenAuth.OAuth2.Client" Version="4.3.4.13329" />
+    <PackageReference Include="DotNetOpenAuth.OAuth2.ClientAuthorization" Version="4.3.4.13329" />
     <PackageReference Include="Flurl">
       <Version>2.8.0</Version>
     </PackageReference>
